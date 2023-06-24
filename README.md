@@ -2,7 +2,29 @@
  A Podman Tutorial
 **Introduction**
 This is an introduction for the podman tutorial.
-<!--- --->
+
+# Podman Installation Instructions
+[Please follow the installation process as per this link.](https://podman.io/docs/installation)
+Nice to use [brew](https://brew.sh/) for the installtion process.
+
+## Running Podman
+```console
+brew install podman
+```
+**Next,** create and start your first Podman machine:
+```console
+podman machine init
+podman machine start
+```
+You can then verify the installation information using:
+
+podman info
+```console
+[user@host ~]$ podman -v
+podman version VERSION
+```
+
+<!--- 
 ```bat
 var s = "JavaScript syntax highlighting";
 alert(s);
@@ -44,3 +66,4 @@ Alt-H2
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
+--->
